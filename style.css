@@ -1,0 +1,193 @@
+/* General css style */
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding-inline-start: 40px;
+  }
+
+a {
+  text-decoration: none;  
+  }
+
+li {
+    display: block;
+    text-align: center; 
+    margin-right: 30px;
+ }
+
+.sub-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* #menu-kids-menu{
+margin-top: 20px;
+display: grid;
+grid-template-columns: auto auto auto auto;
+}
+
+#menu-kids-menu > li{
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 30px;
+  color: pink;
+} */
+
+.menu{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  }
+  
+.menu > li{
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 30px;
+    color: pink;
+  }
+
+  .kids-mega {
+    display: none;
+  }
+
+  .womens-mega {
+    display: none;
+  }
+
+  .mens-mega {
+    display: none;
+  }
+
+  .new-mega {
+    display: none;
+  }
+
+ .menu-item  a{
+ color: red;
+ 
+}
+ 
+.sub-menu  a{
+  color: green;
+ 
+ }
+
+ .sub-menu {
+  padding-inline-start: 0px;
+  
+ }
+
+ .sub-menu li{
+  width: 100%;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 10px;
+   
+}
+
+#menu-kids-menu > li{
+ width: 150px;
+
+}
+
+#menu-womens-nav-menu > li {
+  width: 150px;
+}
+
+
+#menu-mens-nav-menu > li {
+  width: 150px;
+}
+
+#menu-new-nav-menu > li {
+  width: 150px;
+}
+
+@media only screen and (max-width: 670px) {
+
+  ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    padding-inline-start: 40px;
+  }
+
+  .custom-menu-class {
+    background-color: cornsilk;
+    width: 360px;
+    height: 100vh;
+    position: absolute;
+    right: 0%;
+  }
+
+  .custom-menu-class  li {
+    display: block;
+    float: right;
+    text-align: left; 
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+#menu-kids-menu {
+  display: grid;
+  grid-template-columns: auto;
+  position: absolute;
+  right: 0%;
+  background-color: darkcyan;
+  width: 360px;
+  height: 100vh;
+ } 
+
+ #menu-womens-nav-menu {
+  display: grid;
+  grid-template-columns: auto;
+  position: absolute;
+  right: 0%;
+  background-color: darkcyan;
+  width: 360px;
+  height: 100vh;
+ }
+
+ #menu-mens-nav-menu {
+  display: grid;
+  grid-template-columns: auto;
+  position: absolute;
+  right: 0%;
+  background-color: darkcyan;
+  width: 360px;
+  height: 100vh;
+ }
+
+ #menu-new-nav-menu {
+  display: grid;
+  grid-template-columns: auto;
+  position: absolute;
+  right: 0%;
+  background-color: darkcyan;
+  width: 360px;
+  height: 100vh;
+ }
+
+
+ ul {
+  padding-inline-start: 00px;
+}
+
+
+
+
+
+.hello {
+  display: none;
+}
+
+}
