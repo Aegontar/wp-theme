@@ -6,7 +6,7 @@ ul {
     display: flex;
     justify-content: center;
     text-decoration: none;
-    padding-inline-start: 40px;
+    padding-inline-start: 00px;
   }
 
 a {
@@ -52,7 +52,17 @@ grid-template-columns: auto auto auto auto;
   }
 
   .kids-mega {
-    display: none;
+    display: grid;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out;
+  }
+
+
+
+  .max {
+      max-height: 500px;
+      transition: max-height 0.25s ease-in;
   }
 
   .womens-mega {
@@ -71,11 +81,54 @@ grid-template-columns: auto auto auto auto;
  color: red;
  
 }
+
+
  
 .sub-menu  a{
   color: green;
- 
+
  }
+
+ .fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/*  .kids-mega a {
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+ } */
+
+
+/*  .menu-item  a:hover {
+  animation: fadeInOpacity  1s infinite;
+  } 
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+} */
+
 
  .sub-menu {
   padding-inline-start: 0px;
@@ -109,6 +162,7 @@ grid-template-columns: auto auto auto auto;
 }
 
 @media only screen and (max-width: 670px) {
+
 
   ul {
     padding: 0;
@@ -182,7 +236,11 @@ grid-template-columns: auto auto auto auto;
   padding-inline-start: 00px;
 }
 
-
+.menu{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto;
+  }
 
 
 
