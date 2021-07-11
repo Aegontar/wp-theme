@@ -58,32 +58,37 @@ grid-template-columns: auto auto auto auto;
     transition: max-height 0.15s ease-out;
   }
 
-
-
-  .max {
-      max-height: 500px;
-      transition: max-height 0.25s ease-in;
-  }
-
   .womens-mega {
-    display: none;
+    display: grid;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out;
   }
 
   .mens-mega {
-    display: none;
+    display: grid;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out;
   }
 
   .new-mega {
-    display: none;
+    display: grid;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out;
   }
+
+  .max {
+    max-height: 500px;
+    transition: max-height 0.25s ease-in;
+}
 
  .menu-item  a{
  color: red;
  
 }
 
-
- 
 .sub-menu  a{
   color: green;
 
